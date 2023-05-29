@@ -28,6 +28,7 @@ Add image to your `devcontainer.json`:
   ```yaml
   # .devcontainer/docker-compose.yml
   version: '3.9'
+
   services:
     app:
       build:
