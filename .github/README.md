@@ -1,3 +1,6 @@
+[![Release](https://github.com/enthusiasticcodelab/typescript-node/actions/workflows/release.yml/badge.svg)](https://github.com/enthusiasticcodelab/typescript-node/actions/workflows/release.yml)
+[![Create and publish a Docker image to ghcr.io](https://github.com/enthusiasticcodelab/typescript-node/actions/workflows/publish-ghcr.yml/badge.svg)](https://github.com/enthusiasticcodelab/typescript-node/actions/workflows/publish-ghcr.yml)
+
 # Typescript & Node
 
 You can use the Dockefile directly but it is made for Devcontainers basically.
