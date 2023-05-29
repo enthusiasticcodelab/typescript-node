@@ -15,12 +15,8 @@ FROM mcr.microsoft.com/devcontainers/typescript-node:0-${VARIANT}
 
 ARG USERNAME
 
-# RUN \
-#   mkdir -p /home/$USERNAME/.vscode-server/extensions && \
-#   chown -R $USERNAME /home/$USERNAME/.vscode-server
-
 # Switch user from root to node
 USER $USERNAME
 
 RUN \
-  npm install --global @antfu/ni bumpp npkill taze
+  npm install --global @antfu/ni bumpp npkill npm pnpm taze
