@@ -2,12 +2,12 @@
 # 18, 16, 14, 18-bullseye, 16-bullseye, 14-bullseye, 18-buster, 16-buster, 14-buster
 ARG VARIANT=20-bullseye
 
+# https://github.com/microsoft/vscode-dev-containers/tree/main/containers/typescript-node#readme
+FROM mcr.microsoft.com/devcontainers/typescript-node:0-${VARIANT}
+
 LABEL org.opencontainers.image.source=https://github.com/enthusiasticcodelab/typescript-node
 LABEL org.opencontainers.image.description="Typescript & Node container"
 LABEL org.opencontainers.image.licenses=MIT
-
-# https://github.com/microsoft/vscode-dev-containers/tree/main/containers/typescript-node#readme
-FROM mcr.microsoft.com/devcontainers/typescript-node:0-${VARIANT}
 
 # Uncomment this section to install additional OS packages.
 # ENV DEBIAN_FRONTEND=noninteractive
