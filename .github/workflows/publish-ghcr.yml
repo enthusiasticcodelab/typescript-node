@@ -39,9 +39,9 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           labels: |
-            org.opencontainers.image.source=https://github.com/enthusiasticcodelab/typescript-node
-            org.opencontainers.image.description=Typescript & Node container
+            org.opencontainers.image.description="Typescript & Node container"
             org.opencontainers.image.licenses=MIT
+            org.opencontainers.image.version=latest
           tags: |
             type=ref,event=branch
             type=ref,event=pr
