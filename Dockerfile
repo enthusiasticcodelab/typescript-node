@@ -5,6 +5,8 @@ ARG VARIANT=20-bullseye
 # https://github.com/microsoft/vscode-dev-containers/tree/main/containers/typescript-node#readme
 FROM mcr.microsoft.com/devcontainers/typescript-node:0-${VARIANT}
 
+LABEL org.opencontainers.image.description="Typescript & Node container"
+
 # Uncomment this section to install additional OS packages.
 # ENV DEBIAN_FRONTEND=noninteractive
 
