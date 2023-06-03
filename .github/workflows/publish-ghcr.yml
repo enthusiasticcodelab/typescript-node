@@ -41,6 +41,7 @@ jobs:
           labels: |
             org.opencontainers.image.licenses=MIT
             org.opencontainers.image.version=latest
+            org.opencontainers.image.description="Typescript & Node container"
           tags: |
             type=ref,event=branch
             type=ref,event=pr
