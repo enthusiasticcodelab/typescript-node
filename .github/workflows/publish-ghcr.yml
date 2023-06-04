@@ -33,9 +33,6 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          labels: |
-            org.opencontainers.image.description=Typescript & Node container
-            org.opencontainers.image.vendor=Enthusiastic Code Lab
           tags: |
             type=ref,event=tag
             type=semver,enable=true,pattern={{version}}
