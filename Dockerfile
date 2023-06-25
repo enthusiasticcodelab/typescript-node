@@ -18,6 +18,9 @@ ARG USERNAME
 # Switch user from root to node
 USER $USERNAME
 
+RUN \
+  pnpm set config set store-dir ~/.pnpm-store
+
 # Install global packages
 RUN \
   npm install --global @antfu/ni bumpp npkill npm pnpm taze
